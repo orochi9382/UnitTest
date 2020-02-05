@@ -4,7 +4,7 @@
   "description": "A mocha unit test example",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register src/**/test.ts",
+    "test": "mocha -r ts-node/register src/**/*.test.ts",
     "test1": "mocha -r ts-node/register src/**/test1.ts"
   },
   "author": "Ryan",

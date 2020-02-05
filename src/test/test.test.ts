@@ -2,6 +2,8 @@ import hello from "../lib/helloworld";
 import max from "../lib/max";
 import min from "../lib/min";
 import average from "../lib/average";
+import { expect, assert } from "chai";
+import { isUndefined } from "util";
 const should = require("should");
 
 describe("Hello function", () => {
@@ -24,6 +26,7 @@ describe("#max", () => {
   it("should return undefined when array is empty", done => {
     const maximum = max([]);
     (maximum === undefined).should.be.true;
+    expect(isUndefined(maximum)).to.equal(true);
     done();
   });
 });
@@ -40,7 +43,7 @@ describe("#min", () => {
   // 測試有沒有回傳 undefined
   it("should return undefined when array is empty", done => {
     const minimum = min([]);
-    (minimum === undefined).should.be.true;
+    expect(isUndefined(minimum)).to.equal(true);
     done();
   });
 });
@@ -57,7 +60,7 @@ describe("#average", () => {
   // 測試有沒有回傳 NaN
   it("should return NaN when array is empty", done => {
     const avg = average([]);
-    isNaN(avg).should.be.true;
+    expect(isNaN(avg)).to.equal(true);
     done();
   });
 });
