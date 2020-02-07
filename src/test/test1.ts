@@ -27,7 +27,7 @@ describe("Hello function", () => {
   it("should return hello world", () => {
     //撰寫測試案例（Test Case）。
     const result = hello();
-    // expect(result).to.equal("Hello World!");
+    // expect(result).to.equal("Hello World!", "Test result not equal Hello World!");
     // result.should.equal("Hello World!1");
     assert(result === "Hello World!", "Test result not equal Hello World!");
   });
