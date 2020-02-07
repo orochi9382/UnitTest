@@ -29,6 +29,6 @@ describe("Hello function", () => {
     const result = hello();
     // expect(result).to.equal("Hello World!", "Test result not equal Hello World!");
     // result.should.equal("Hello World!1");
-    assert(result === "Hello World!", "Test result not equal Hello World!");
+    assert(result === "Hello ㄅ1!", "Test result not equal Hello World!");
   });
 });

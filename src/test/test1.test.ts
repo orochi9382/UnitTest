@@ -16,6 +16,6 @@ describe("Hello function", () => {
 // npm install mocha chai ts-node -g
 // npm install mocha chai ts-node --save-dev
 
-//npm run test 測試test
+//npm run test 測試test1
 //npm run test1 測試test1
 //npm run test -- -g "Hello function" 指定方法名稱測試
